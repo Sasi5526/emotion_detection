@@ -1,6 +1,10 @@
 <html>
    <body>
-      <img src="{{url_for('static', filename=filename)}}" />
+      <video width="320" height="240" controls>
+      <source src="{{url_for('static', filename=filename)}}" type="video/mp4">
+      <source src="{{url_for('static', filename=filename)}}" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
    
    
      <div class="container">
@@ -8,3 +12,4 @@
     </div>
   </body>
 </html>
+
